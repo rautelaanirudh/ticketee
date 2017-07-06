@@ -175,3 +175,437 @@ Processing by ProjectsController#show as HTML
   Rendered projects/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 12ms (Views: 3.3ms | ActiveRecord: 0.2ms)
   [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 06:59:10 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 235ms (Views: 226.9ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 06:59:10 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 30ms (Views: 22.6ms | ActiveRecord: 0.4ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 06:59:10 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 01:29:10.724605"], ["updated_at", "2017-07-06 01:29:10.724605"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 06:59:10 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:02:16 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 262ms (Views: 253.2ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:02:16 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:02:16 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 01:32:16.309125"], ["updated_at", "2017-07-06 01:32:16.309125"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:02:16 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (7.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:11:50 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 249ms (Views: 240.1ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:11:50 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 32ms (Views: 24.4ms | ActiveRecord: 0.4ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:11:50 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 01:41:50.374839"], ["updated_at", "2017-07-06 01:41:50.374839"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:11:50 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 11ms
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:13:55 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 243ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:13:56 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 30ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:13:56 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 01:43:56.134706"], ["updated_at", "2017-07-06 01:43:56.134706"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:13:56 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 12ms
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:14:50 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 253ms (Views: 244.4ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:14:50 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 29ms (Views: 22.6ms | ActiveRecord: 0.4ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:14:50 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 01:44:50.467110"], ["updated_at", "2017-07-06 01:44:50.467110"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:14:50 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 14ms
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:17:50 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 326ms (Views: 316.5ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:17:51 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 62ms (Views: 54.6ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:17:51 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 01:47:51.358344"], ["updated_at", "2017-07-06 01:47:51.358344"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 20ms (ActiveRecord: 0.7ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:17:51 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 14ms
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:22:06 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 306ms (Views: 296.2ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:22:06 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 63ms (Views: 56.6ms | ActiveRecord: 0.4ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:22:06 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 01:52:06.670792"], ["updated_at", "2017-07-06 01:52:06.670792"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 19ms (ActiveRecord: 0.7ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:22:06 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 13ms
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:28:42 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 309ms (Views: 299.7ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:28:42 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:28:43 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 01:58:43.045068"], ["updated_at", "2017-07-06 01:58:43.045068"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 20ms (ActiveRecord: 0.7ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:28:43 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 14ms
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:35:04 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 287ms (Views: 278.6ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:35:04 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 65ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:35:04 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:05:04.623444"], ["updated_at", "2017-07-06 02:05:04.623444"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 15ms (ActiveRecord: 1.1ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:35:04 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 15ms
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:36:16 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 242ms (Views: 233.1ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:36:16 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 26ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:36:16 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:06:16.907282"], ["updated_at", "2017-07-06 02:06:16.907282"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:36:16 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:37:01 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 245ms (Views: 236.2ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:37:02 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 32ms (Views: 26.5ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:37:02 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:07:02.063856"], ["updated_at", "2017-07-06 02:07:02.063856"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:37:02 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (7.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:38:04 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 250ms (Views: 241.5ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:38:04 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 29ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:38:04 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:08:04.599546"], ["updated_at", "2017-07-06 02:08:04.599546"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:38:04 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:39:40 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 247ms (Views: 237.7ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:39:40 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:39:40 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:09:40.663337"], ["updated_at", "2017-07-06 02:09:40.663337"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:39:40 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:40:02 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 249ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:40:03 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:40:03 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:10:03.085919"], ["updated_at", "2017-07-06 02:10:03.085919"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:40:03 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (7.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:40:28 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 239ms (Views: 230.0ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:40:28 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 30ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:40:28 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:10:28.781030"], ["updated_at", "2017-07-06 02:10:28.781030"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:40:28 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 10ms
+  [1m[36m (6.9ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:42:30 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 247ms (Views: 238.1ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:42:30 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 30ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:42:30 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:12:30.876341"], ["updated_at", "2017-07-06 02:12:30.876341"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:42:30 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-07-06 07:43:38 +0530
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 253ms (Views: 244.2ms | ActiveRecord: 0.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2017-07-06 07:43:38 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 30ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+Started POST "/projects" for 127.0.0.1 at 2017-07-06 07:43:38 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "project"=>{"name"=>"Sublime Text 3", "description"=>"A text editor for everyone"}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sublime Text 3"], ["description", "A text editor for everyone"], ["created_at", "2017-07-06 02:13:38.410604"], ["updated_at", "2017-07-06 02:13:38.410604"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+Started GET "/projects/1" for 127.0.0.1 at 2017-07-06 07:43:38 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? LIMIT 1[0m  [["name", "Sublime Text 3"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
