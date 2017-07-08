@@ -120,3 +120,1216 @@ Started PUT "/__web_console/repl_sessions/97f7e1db84b842f6e3157227254a7d1a" for 
 
 
 Started PUT "/__web_console/repl_sessions/97f7e1db84b842f6e3157227254a7d1a" for ::1 at 2017-07-06 07:27:52 +0530
+
+
+Started GET "/" for ::1 at 2017-07-08 11:37:55 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 207ms
+
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."):
+     8:       Ticketee
+     9:     <% end %>
+    10:   </title>
+    11:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    12:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    13:   <%= csrf_meta_tags %>
+    14: </head>
+  app/assets/stylesheets/application.css.scss:2
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___4479961645704670436_70305521292500'
+
+
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.5ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.1ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.8ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (190.1ms)
+
+
+Started GET "/" for ::1 at 2017-07-08 12:27:11 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 4964ms (Views: 4952.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 12:27:16 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (62.3ms)
+  Rendered projects/new.html.erb within layouts/application (83.9ms)
+Completed 200 OK in 111ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-aa9778b9631a777b38508c7693c0617fdb66cc2ca7d437cd97d7a0206acbd68b.css?body=1" for ::1 at 2017-07-08 12:27:16 +0530
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 12:29:38 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (1.4ms)
+  Rendered projects/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 12:29:38 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 12:29:38 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/2" for ::1 at 2017-07-08 12:29:52 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered projects/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/2/edit" for ::1 at 2017-07-08 12:29:54 +0530
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered projects/_form.html.erb (1.7ms)
+  Rendered projects/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 12:30:06 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (1.2ms)
+  Rendered projects/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 13:07:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (46.9ms)
+  Rendered projects/new.html.erb within layouts/application (67.9ms)
+Completed 200 OK in 678ms (Views: 661.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 13:07:17 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (1.6ms)
+  Rendered projects/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 13:07:22 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (1.3ms)
+  Rendered projects/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:07:23 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:07:24 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:15:06 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 617ms (Views: 604.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:20:02 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 13:20:02 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 13:20:02 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 13:20:02 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 13:20:02 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 13:20:02 +0530
+
+
+Started GET "/assets/application.self-aa9778b9631a777b38508c7693c0617fdb66cc2ca7d437cd97d7a0206acbd68b.css?body=1" for ::1 at 2017-07-08 13:20:02 +0530
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 13:20:31 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (48.4ms)
+  Rendered projects/new.html.erb within layouts/application (67.1ms)
+Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 13:20:34 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1/edit" for ::1 at 2017-07-08 13:20:37 +0530
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/_form.html.erb (2.1ms)
+  Rendered projects/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/projects/1" for ::1 at 2017-07-08 13:20:44 +0530
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ogm7VvI35tyIuqZVfxRDLgJ3qnFr3mkRJCI1ug6UBaftJtb+jy/S7kmw3NkQ3N0i448qfFb0B8qyDTPQdcAieg==", "project"=>{"name"=>"Test Project", "description"=>"This is the first project"}, "commit"=>"Update Project", "id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "projects" SET "name" = ?, "updated_at" = ? WHERE "projects"."id" = ?  [["name", "Test Project"], ["updated_at", "2017-07-08 07:50:44.288874"], ["id", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 5ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 13:20:44 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:20:50 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/2" for ::1 at 2017-07-08 13:20:56 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered projects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/2" for ::1 at 2017-07-08 13:21:15 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/2/edit" for ::1 at 2017-07-08 13:21:17 +0530
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered projects/_form.html.erb (3.0ms)
+  Rendered projects/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:30:34 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 1294ms
+
+ActionView::Template::Error (File to import not found or unreadable: font-awesome.
+Load paths:
+  /Users/anirudh/ticketee/app/assets/images
+  /Users/anirudh/ticketee/app/assets/javascripts
+  /Users/anirudh/ticketee/app/assets/stylesheets
+  /Users/anirudh/ticketee/vendor/assets/javascripts
+  /Users/anirudh/ticketee/vendor/assets/stylesheets
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/fonts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/images
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/stylesheets):
+     8:       Ticketee
+     9:     <% end %>
+    10:   </title>
+    11:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    12:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    13:   <%= csrf_meta_tags %>
+    14: </head>
+  app/assets/stylesheets/application.css.scss:3
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___516037176614037879_70304921868340'
+
+
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.6ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.2ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.7ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:30:56 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 664ms
+
+ActionView::Template::Error (File to import not found or unreadable: font-awesome.
+Load paths:
+  /Users/anirudh/ticketee/app/assets/images
+  /Users/anirudh/ticketee/app/assets/javascripts
+  /Users/anirudh/ticketee/app/assets/stylesheets
+  /Users/anirudh/ticketee/vendor/assets/javascripts
+  /Users/anirudh/ticketee/vendor/assets/stylesheets
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/fonts
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/images
+  /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/bootstrap-sass-3.3.7/assets/stylesheets):
+     8:       Ticketee
+     9:     <% end %>
+    10:   </title>
+    11:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    12:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    13:   <%= csrf_meta_tags %>
+    14: </head>
+  app/assets/stylesheets/application.css.scss:3
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___516037176614037879_70304921868340'
+
+
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.3ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.3ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/anirudh/.rvm/gems/ruby-2.2.1@rails4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:31:36 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 3615ms (Views: 3603.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-63b92fe55ef3c41925a8c6862a18fe4f21a3ed3d520fc53ba18dee96c3f73647.css?body=1" for ::1 at 2017-07-08 13:31:39 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 13:31:39 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 13:31:39 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 13:31:39 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 13:31:39 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 13:31:39 +0530
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:44:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 624ms (Views: 611.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 13:44:24 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 13:44:24 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 13:44:24 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 13:44:24 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 13:44:24 +0530
+
+
+Started GET "/assets/application.self-63b92fe55ef3c41925a8c6862a18fe4f21a3ed3d520fc53ba18dee96c3f73647.css?body=1" for ::1 at 2017-07-08 13:44:24 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 13:44:24 +0530
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:47:47 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 3279ms (Views: 3266.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-3cae9d6f6f078151bcfcddca4842333357a47f8183c08cca20a7dd0cf1670b2a.css?body=1" for ::1 at 2017-07-08 13:47:51 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 13:47:51 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 13:47:51 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 13:47:51 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 13:47:51 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 13:47:51 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 13:47:51 +0530
+
+
+Started GET "/projects" for ::1 at 2017-07-08 13:52:00 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 3245ms (Views: 3233.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-716b5a944a3ae13fc9c29ef54bf03f2fba0466ff71726dc7344c2983bcd792ba.css?body=1" for ::1 at 2017-07-08 13:52:04 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 13:52:04 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 13:52:04 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 13:52:04 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 13:52:04 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 13:52:04 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 13:52:04 +0530
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 13:52:08 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (46.6ms)
+  Rendered projects/new.html.erb within layouts/application (80.7ms)
+Completed 200 OK in 114ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 15:33:27 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (10.4ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 342ms (Views: 158.7ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 15:36:06 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 15:36:07 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 15:36:07 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 15:36:07 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 15:36:07 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 15:36:07 +0530
+
+
+Started GET "/assets/application.self-716b5a944a3ae13fc9c29ef54bf03f2fba0466ff71726dc7344c2983bcd792ba.css?body=1" for ::1 at 2017-07-08 15:36:07 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 15:36:07 +0530
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 15:36:08 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 15:36:27 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 683ms (Views: 656.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 15:36:29 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 15:36:29 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 15:36:29 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 15:36:29 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 15:36:29 +0530
+
+
+Started GET "/assets/application.self-716b5a944a3ae13fc9c29ef54bf03f2fba0466ff71726dc7344c2983bcd792ba.css?body=1" for ::1 at 2017-07-08 15:36:29 +0530
+
+
+Started GET "/projects" for ::1 at 2017-07-08 15:36:31 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 15:36:31 +0530
+
+
+Started GET "/projects" for ::1 at 2017-07-08 15:36:34 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 15:36:34 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 15:36:34 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 15:36:34 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 15:36:34 +0530
+
+
+Started GET "/assets/application.self-716b5a944a3ae13fc9c29ef54bf03f2fba0466ff71726dc7344c2983bcd792ba.css?body=1" for ::1 at 2017-07-08 15:36:34 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 15:36:34 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 15:36:34 +0530
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 15:36:36 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/1/edit" for ::1 at 2017-07-08 15:36:38 +0530
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/_form.html.erb (52.6ms)
+  Rendered projects/edit.html.erb within layouts/application (84.7ms)
+Completed 200 OK in 115ms (Views: 113.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 15:36:48 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (1.8ms)
+  Rendered projects/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 15:42:17 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 366ms (Views: 354.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 15:42:18 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 15:42:18 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 15:42:18 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 15:42:18 +0530
+
+
+Started GET "/assets/application.self-716b5a944a3ae13fc9c29ef54bf03f2fba0466ff71726dc7344c2983bcd792ba.css?body=1" for ::1 at 2017-07-08 15:42:18 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 15:42:18 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 15:42:18 +0530
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 15:42:20 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 57ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1/edit" for ::1 at 2017-07-08 15:42:24 +0530
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/_form.html.erb (33.5ms)
+  Rendered projects/edit.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 85ms (Views: 83.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 15:53:48 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 3332ms (Views: 3319.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-27ba476bac5a5ea16d57fc56b87616047a2677e56dd71de47d4042708ac07ee0.css?body=1" for ::1 at 2017-07-08 15:53:51 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 15:53:51 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 15:53:51 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 15:53:51 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 15:53:51 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 15:53:51 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 15:53:51 +0530
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 15:53:54 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 15:57:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 342ms (Views: 330.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 15:57:11 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 15:57:11 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 15:57:11 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 15:57:11 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 15:57:11 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 15:57:11 +0530
+
+
+Started GET "/assets/application.self-27ba476bac5a5ea16d57fc56b87616047a2677e56dd71de47d4042708ac07ee0.css?body=1" for ::1 at 2017-07-08 15:57:11 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 15:57:11 +0530
+
+
+Started GET "/projects" for ::1 at 2017-07-08 16:14:58 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 2738ms (Views: 2726.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 16:15:01 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-2c2beb6f3ba5fdbe673eaf6d1753b581ec073e623d7b8c6cad113d5122b35992.css?body=1" for ::1 at 2017-07-08 16:15:01 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 16:15:01 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 16:15:01 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 16:15:01 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 16:15:01 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 16:15:01 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 16:15:01 +0530
+
+
+Started GET "/projects/1" for ::1 at 2017-07-08 16:15:04 +0530
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-08 16:34:40 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 2890ms (Views: 2874.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-a76c418705fc400f8a3321ca185bddbb3997afcdca912d84ff5490127d2f173c.css?body=1" for ::1 at 2017-07-08 16:34:43 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 16:34:43 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 16:34:43 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 16:34:43 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 16:34:43 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 16:34:43 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 16:34:43 +0530
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 16:34:45 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (87.5ms)
+  Rendered projects/new.html.erb within layouts/application (93.9ms)
+Completed 200 OK in 124ms (Views: 122.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/projects" for ::1 at 2017-07-08 16:35:01 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nF+F/nDHgaRkMx1zlF25NTZM0TccempH/DLjyXzyiRPTcOhWDd+1lqU5Z//7lSc517RROiFQBJxqHeWjB6auzg==", "project"=>{"name"=>"", "description"=>""}, "commit"=>"Create Project"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered projects/_form.html.erb (8.9ms)
+  Rendered projects/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for ::1 at 2017-07-08 16:36:15 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nF+F/nDHgaRkMx1zlF25NTZM0TccempH/DLjyXzyiRPTcOhWDd+1lqU5Z//7lSc517RROiFQBJxqHeWjB6auzg==", "project"=>{"name"=>"", "description"=>""}, "commit"=>"Create Project"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered projects/_form.html.erb (64.9ms)
+  Rendered projects/new.html.erb within layouts/application (72.2ms)
+Completed 200 OK in 453ms (Views: 419.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 16:36:15 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 16:36:15 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 16:36:15 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 16:36:15 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 16:36:15 +0530
+
+
+Started GET "/assets/application.self-a76c418705fc400f8a3321ca185bddbb3997afcdca912d84ff5490127d2f173c.css?body=1" for ::1 at 2017-07-08 16:36:15 +0530
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 16:36:52 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (7.9ms)
+  Rendered projects/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 16:36:55 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (9.8ms)
+  Rendered projects/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 16:36:55 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 16:36:55 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 16:36:55 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 16:36:55 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 16:36:55 +0530
+
+
+Started GET "/assets/application.self-a76c418705fc400f8a3321ca185bddbb3997afcdca912d84ff5490127d2f173c.css?body=1" for ::1 at 2017-07-08 16:36:55 +0530
+
+
+Started POST "/projects" for ::1 at 2017-07-08 16:36:56 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwWrWAmw1zgcdMB3/4ruYFfJ8NfKVBBU+reGEqfLHfMMKsbwdKjjCt1+uvuQQnBstjFw2vd+fo9smIB43J86Lg==", "project"=>{"name"=>"", "description"=>""}, "commit"=>"Create Project"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered projects/_form.html.erb (11.7ms)
+  Rendered projects/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/projects" for ::1 at 2017-07-08 16:43:03 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwWrWAmw1zgcdMB3/4ruYFfJ8NfKVBBU+reGEqfLHfMMKsbwdKjjCt1+uvuQQnBstjFw2vd+fo9smIB43J86Lg==", "project"=>{"name"=>"", "description"=>""}, "commit"=>"Create Project"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered projects/_form.html.erb (61.9ms)
+  Rendered projects/new.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 430ms (Views: 400.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 16:43:04 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 16:43:04 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 16:43:04 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 16:43:04 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 16:43:04 +0530
+
+
+Started GET "/assets/application.self-a76c418705fc400f8a3321ca185bddbb3997afcdca912d84ff5490127d2f173c.css?body=1" for ::1 at 2017-07-08 16:43:04 +0530
+
+
+Started POST "/projects" for ::1 at 2017-07-08 16:45:31 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwWrWAmw1zgcdMB3/4ruYFfJ8NfKVBBU+reGEqfLHfMMKsbwdKjjCt1+uvuQQnBstjFw2vd+fo9smIB43J86Lg==", "project"=>{"name"=>"", "description"=>""}, "commit"=>"Create Project"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered projects/_form.html.erb (68.0ms)
+  Rendered projects/new.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 2900ms (Views: 2868.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-8d306b7cd75a1a6f801609c2f28651b21cc37aebd1a8b624e3ecd7e13de29f02.css?body=1" for ::1 at 2017-07-08 16:45:34 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 16:45:34 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 16:45:34 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 16:45:34 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 16:45:34 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 16:45:34 +0530
+
+
+Started POST "/projects" for ::1 at 2017-07-08 16:45:41 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwWrWAmw1zgcdMB3/4ruYFfJ8NfKVBBU+reGEqfLHfMMKsbwdKjjCt1+uvuQQnBstjFw2vd+fo9smIB43J86Lg==", "project"=>{"name"=>"", "description"=>""}, "commit"=>"Create Project"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered projects/_form.html.erb (6.9ms)
+  Rendered projects/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 16:45:41 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 16:45:41 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 16:45:41 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 16:45:41 +0530
+
+
+Started GET "/assets/application.self-8d306b7cd75a1a6f801609c2f28651b21cc37aebd1a8b624e3ecd7e13de29f02.css?body=1" for ::1 at 2017-07-08 16:45:41 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 16:45:41 +0530
+
+
+Started GET "/projects" for ::1 at 2017-07-08 16:57:02 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 351ms (Views: 338.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 16:57:03 +0530
+
+
+Started GET "/" for ::1 at 2017-07-08 16:57:06 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-07-08 16:57:08 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-07-08 16:57:09 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-07-08 16:57:10 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-07-08 16:58:31 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 2842ms (Views: 2829.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-a7ade3fcaa926c1b1695c0403ba0e03f7905380c6f1a5b18114c1616ff945e39.css?body=1" for ::1 at 2017-07-08 16:58:35 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 16:58:35 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 16:58:35 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 16:58:35 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 16:58:35 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 16:58:35 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 16:58:35 +0530
+
+
+Started GET "/" for ::1 at 2017-07-08 16:58:56 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-07-08 16:58:57 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-07-08 16:58:58 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-07-08 17:00:32 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 362ms (Views: 349.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 17:00:33 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 17:00:33 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 17:00:33 +0530
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2017-07-08 17:00:33 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 17:00:33 +0530
+
+
+Started GET "/assets/application.self-a7ade3fcaa926c1b1695c0403ba0e03f7905380c6f1a5b18114c1616ff945e39.css?body=1" for ::1 at 2017-07-08 17:00:33 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 17:00:33 +0530
+
+
+Started GET "/" for ::1 at 2017-07-08 17:02:00 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 328ms (Views: 327.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/application.self-a7ade3fcaa926c1b1695c0403ba0e03f7905380c6f1a5b18114c1616ff945e39.css?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 17:02:00 +0530
+
+
+Started GET "/" for ::1 at 2017-07-08 17:20:14 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 2946ms (Views: 2933.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-00abd335d3d8b79e47e7f0f452747a0ac4260a9a47037b94611500642c634cf1.css?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for ::1 at 2017-07-08 17:20:18 +0530
+
+
+Started GET "/projects/new" for ::1 at 2017-07-08 17:20:20 +0530
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (87.4ms)
+  Rendered projects/new.html.erb within layouts/application (93.4ms)
+Completed 200 OK in 138ms (Views: 136.9ms | ActiveRecord: 0.0ms)
